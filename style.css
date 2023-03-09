@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  --metal-tex: url(https://images.unsplash.com/photo-1501166222995-ff31c7e93cef?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTcyMDc2NzU&ixlib=rb-1.2.1&q=80);
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+
+.top-section {
+  background-image: url("photography-background.jpg");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-section-content {
+  text-align: center;
+  color: white;
+}
+
+.social-section {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-box {
+  width: 70px;
+  height: 100px;
+  margin: 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.downloads-section {
+  background-image: url();
+  background-color: #2591cfd2;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.downloads-box {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloads-box img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.815);
+  text-align: center;
+}
+
+a {
+  top: 0;
+  color: skyblue;
+  font-weight: bold;
+}
+
+.main {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metal {
+  position: relative;
+  margin: 15vh auto;
+  color: transparent;
+  font-family: impact, sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.05em;
+  background-image: var(--metal-tex);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.texture,
+.texture::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.texture {
+  background-image: linear-gradient(to bottom, blue, white 50%, red 65%, white);
+  background-attachment: fixed;
+  mix-blend-mode: color-dodge;
+}
+
+.texture::after {
+  content: "";
+  background-image: var(--metal-tex);
+  background-size: cover;
+  filter: saturate(0) brightness(0.8) contrast(4);
+  mix-blend-mode: multiply;
+}
+
+.Photoshop-logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.drive-logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.download-btn1 {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgba(5, 245, 213, 0.671);
+}
+
+.downloads-box1 {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 40px;
+  border: 1px solid #cccccc00;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloads-box1 img {
+  max-width: 80%;
+  max-height: 80%;
+}

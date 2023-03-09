@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-me img,
+.camera-info img {
+  width: 50%;
+  height: 50%;
+}
+
+.about-camera {
+  background-color: #f1f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.motivation {
+  background-color: #333;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.motivation h2,
+.about-camera h2 {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .about-me img {
+    flex-basis: 50%;
+    margin-right: 20px;
+  }
+
+  .about-me p {
+    flex-basis: 50%;
+  }
+
+  .camera-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .camera-info p {
+    flex-basis: 50%;
+    margin-left: 20px;
+  }
+}
+
+p {
+  font-weight: bold;
+}
+
+.goback {
+  color: white;
+}
